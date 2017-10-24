@@ -1,10 +1,10 @@
 {
   "name": "node-todo-api",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha server/**/*.test.js",
+    "test-watch": "nodemon --exec 'npm test'"
   },
   "author": "",
   "license": "ISC",
@@ -13,5 +13,17 @@
     "express": "^4.16.0",
     "mongodb": "^2.2.19",
     "mongoose": "^4.5.9"
-  }
+  },
+  "devDependencies": {
+    "mocha": "^4.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jhonalcala/node-todo-api.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jhonalcala/node-todo-api/issues"
+  },
+  "homepage": "https://github.com/jhonalcala/node-todo-api#readme",
+  "description": ""
 }
